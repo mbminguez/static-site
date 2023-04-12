@@ -1,0 +1,64 @@
+.blurrr {
+    animation: blurrr 8s ease forwards;
+}
+
+@keyframes blurrr {
+    0% {
+        -webkit-filter: blur(15px);
+        -moz-filter: blur(15px);
+        -o-filter: blur(15px);
+        -ms-filter: blur(15px);
+    }
+
+    50% {
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+    }
+
+    80% {
+        -webkit-filter: blur(2px);
+        -moz-filter: blur(2px);
+        -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+    }
+
+    90% {
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -o-filter: blur(1px);
+        -ms-filter: blur(1px);
+    }
+}
+
+.hearttt {
+    animation: hearttt 2s ease forwards infinite;
+    animation-delay: 4s;
+}
+
+@keyframes hearttt {
+    0% {
+        transform: scale(.75);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(.8);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(.6);
+    }
+
+    100% {
+        transform: scale(.75);
+    }
+}

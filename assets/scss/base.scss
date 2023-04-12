@@ -1,0 +1,42 @@
+//**************************************************//
+// Imports -> Partials //
+//**************************************************//
+
+@import 'partials/animations';
+@import 'partials/article-1';
+@import 'partials/article-2';
+@import 'partials/article-3';
+@import 'partials/colors';
+@import 'partials/footer';
+@import 'partials/form';
+@import 'partials/hero';
+@import 'partials/mixins';
+@import 'partials/slides';
+@import 'partials/typography';
+
+
+//**************************************************//
+// Global //
+//**************************************************//
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+body {
+	height: 100%;  
+	background: $color--taupe-light;   
+	overflow: hidden;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.template-welcome{
+	text-align: center;
+}

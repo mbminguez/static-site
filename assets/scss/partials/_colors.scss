@@ -1,0 +1,25 @@
+$color--cherry: #a51e36;
+$color--charcoal: #222;
+$color--blue-dark: #22276d;
+$color--blue-icy: #c4eaf7;
+$color--blue-steel: #5d85a3;
+$color--eggshell: #f1ebe5;
+$color--geranium: #ed2129;
+$color--lime: #c3d043;
+$color--ochre: #ffad30;
+$color--taupe: #b79b7c;
+$color--taupe-light: #f1ece5;
+
+$colors: (
+    cherry: $color--cherry,    
+    charcoal: $color--charcoal,
+    blue-dark: $color--blue-dark,
+    blue-icy: $color--blue-icy,
+    blue-steel: $color--blue-steel,
+    eggshell: $color--eggshell,
+    geranium: $color--geranium,
+    lime: $color--lime,
+    ochre: $color--ochre,    
+    taupe: $color--taupe,
+    taupe-light: $color--taupe-light
+);

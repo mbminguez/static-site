@@ -1,0 +1,47 @@
+//**************************************************//
+// Fonts //
+//**************************************************//
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.eot');
+  src: url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.woff2') format('woff2'),
+       url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.woff') format('woff'),
+       url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.ttf')  format('truetype'),
+       url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.svg') format('svg');
+}
+
+$font-primary: 'Oswald', 'Arial', serif;
+$font-secondary: 'Faustina', 'Arial', sans-serif;
+$font--accent: 'Knockout', 'Arial', sans-serif;
+$font--accent-two: 'Roboto', 'Arial', sans-serif; 
+
+//**************************************************//
+// Headings //
+//**************************************************//
+  
+h1, h2 { 
+  font-family: $font-primary;
+  font-size: 4em;
+  color: $color--blue-steel;
+}
+
+h3, h4 { 
+  font-family: $font-secondary;
+  font-size: 4em;
+  color: $color--lime;
+}
+
+h5 { 
+  font-family: $font--accent;
+  font-size: 10em;
+  color: $color--geranium;
+}
+
+p{
+  font-family: $font--accent-two;
+  color: $color--charcoal;
+  font-size: 2em;
+}
+
+  

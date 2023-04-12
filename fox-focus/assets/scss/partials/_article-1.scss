@@ -1,0 +1,403 @@
+.article-1 {  
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    overflow-x: hidden;
+    &__wrap{
+        max-width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+        @include bp-medium {
+            padding-top: 0px;
+        }
+        @include bp-xlarge  {
+			max-width: 996px;
+		}
+        
+    }
+    &__container {
+        margin: 1rem auto 0 auto;
+        @include bp-medium {
+            margin: 3rem auto;
+        }
+        &-wide{
+            max-width: 90%;
+            display: flex;
+            align-items: center;
+            @include bp-small  {
+                max-width: 450px;
+            }
+            @include bp-medium  {
+                max-width: 570px;
+            }
+            @include bp-large  {
+                max-width: 760px;
+            }
+        }
+        &-large{
+            max-width: 90%;
+            @include bp-small  {
+                max-width: 450px;
+            }
+            @include bp-medium  {
+                max-width: 570px;
+            }
+            @include bp-large  {
+                max-width: 852px;
+            }
+            @include bp-xlarge  {
+                max-width: 1024px;
+            }
+        }
+        &-medium{
+            max-width: 80%;
+            @include bp-small  {
+                max-width: 450px;
+            }
+            @include bp-medium  {
+                max-width: 570px;
+            }
+            @include bp-large  {
+                max-width: 760px;
+            }
+        }
+        &-small{
+            max-width: 90%;
+            @include bp-small  {
+                max-width: 450px;
+            }
+            @include bp-medium  {
+                max-width: 570px;
+            }
+            @include bp-large  {
+                max-width: 760px;
+            }
+        }
+        &-narrow{
+            max-width: 90%;
+            padding-top: 1rem;
+            @include bp-xlarge  {
+                max-width: 556px;
+                padding: 1rem;
+            }
+        }
+        &-quote{
+            width: 80%;
+            margin: 20px auto;
+            @include bp-xlarge  {
+                max-width: 80%;
+            }
+        }
+        &-accent{
+            padding: .5rem;
+            margin-top: 10px;
+            background: #d5ebf6;
+            background-image: url(https://www2.fox.temple.edu/fox-focus/assets/img/title-accent-white.png);
+            background-repeat: no-repeat;
+            background-size: 400px;
+            @include bp-medium  {
+                background-size: auto;
+                padding: 1rem;
+                margin-top: 90px;
+            }
+        }
+        &-accent-blue{
+            padding: .5rem;
+            background: #fff;
+            background-image: url(https://www2.fox.temple.edu/fox-focus/assets/img/title-accent-blue.png);
+            background-repeat: no-repeat;
+            background-size: 400px;
+            @include bp-medium  {
+                background-size: auto;
+                padding: 1rem;
+            }
+        }
+    }
+    &__content{
+        padding: 0 10px; 
+        @include bp-medium {
+            padding: 0 75px; 
+        }
+        &-title {
+            flex-direction: row;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: $font-primary;
+            margin: 0;
+            padding: 6px 0 0 32px;
+            @include bp-medium {
+                padding: 13px 0;
+                font-size: 1.4rem;
+            }
+
+            
+        }
+        &-text-blue {
+            flex-direction: row;
+            font-size: 1rem; 
+            &::first-letter {
+                font-size:1.6rem; 
+                color: #fff;
+                font-weight: 600;
+              }         
+        } 
+        &-text-white {
+            flex-direction: row;
+            font-size: 1rem; 
+            &::first-letter {
+                font-size:1.6rem; 
+                color: #92bcd0;
+                font-weight: 600;
+              }         
+        } 
+        &-image {
+            float: none; 
+            margin: 10px 0 0 0; 
+            @include bp-large {
+                float: right;
+                margin: 0 0 15px 35px;  
+            }       
+            p{
+                font-size: .8rem;
+            }
+        } 
+        &-quote{
+            font-size: 2rem;
+            line-height: 1;
+            font-family: $font--accent;
+            background-repeat: no-repeat;
+            @include bp-large {
+                font-size: 3rem;
+            } 
+            &-open-white{
+                width: 100%;
+                background-image: url(https://www2.fox.temple.edu/fox-focus/assets/img/quote-open-white.png);
+                background-position: top left;
+                padding: 30px 0 0 30px;
+                margin:  0 30px 30px 0;
+                float: left;
+                @include bp-large {
+                    width: 40%;
+                }
+            }
+            &-close-white{
+                width: 100%;
+                background-image: url(https://www2.fox.temple.edu/fox-focus/assets/img/quote-close-white.png);
+                background-position: bottom right;
+                padding: 0 30px 30px 0;
+                margin:  0 0 30px 0;
+                float: right;
+                text-align: right;
+                @include bp-large {
+                    width: 60%;
+                }
+            }
+            &-close-blue{
+                background-image: url(https://www2.fox.temple.edu/fox-focus/assets/img/quote-close-blue.png);
+                width: 100%;
+                text-align: right;
+                background-position: bottom right;
+                padding: 0 30px 30px 0;
+                margin:  0 0 30px 0;
+                float: right;
+                @include bp-large {
+                    width: 60%;
+                }
+            }
+        }
+    } 
+    &__hero {
+        max-width: 1200px;
+        margin: 0 ;
+        &-text{
+            padding: 20px 0 0 0;
+            @include bp-xlarge {
+                padding: 20px 0 0 130px;
+                }
+            &::first-letter {
+                font-size:1.4rem; 
+                color: #92bcd0;
+              } 
+        }
+            &-byline{
+                font-size: 1rem;
+                color: $color--cherry;
+                font-weight: 600;
+                text-align: center;
+                @include bp-xlarge {
+                    font-size: .8rem;
+                    text-align: left;
+                    }
+            }
+            &-quote{
+                line-height: 1;
+                font-size: 2.8rem;
+                font-family: $font--accent;
+                text-align: center;
+                @include bp-xlarge {
+                    font-size: 3rem;
+                    text-align: left;
+                    }
+ 
+            }
+            &-title{
+                font-family: $font--accent;
+                font-size: 3rem;
+                text-transform: uppercase;       
+                line-height: .8;   
+                text-align: left;
+                color: #1f134d;
+                clear: both;
+                padding-top: 40px;
+                @include bp-medium {
+                    font-size: 7rem;
+                    padding-top: 0px;
+                }
+            }
+    }
+    &__intro {
+            display: block;
+        @include bp-small {
+           
+        }
+        @include bp-large {
+            flex-direction: column;
+            flex-direction: row;
+            display: flex;
+        }
+        &-left {
+            position: relative;
+            min-width: 100%;
+            min-width: 100%;
+            margin-bottom: 20px;
+            @include bp-large {
+                min-width: 55%;
+                max-width: 55%; 
+                margin-bottom: 0px;
+            } 
+          
+            p {
+                margin: 1rem 0;
+                span {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+            }       
+        }
+        &-right {
+            margin-left: 0rem;
+            padding-left: 0rem;
+            z-index: -3;
+            @include bp-small {
+                width: 100%;
+                right: 0;
+            }
+
+            @include bp-large {
+            position: absolute;
+            top: 3%;
+            right: 5%;
+            width: 40%;
+            }
+
+            img{
+                opacity: 0;
+            }
+        }  
+    }
+    &__banner {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: -9999999;
+        &-left{
+            left: 0;
+        }
+        @include bp-small {
+            width: 65%;
+        }
+        @include bp-medium {
+            width: 60%;
+        }
+        @include bp-large {
+            width: 65%;
+        }
+        @include bp-xlarge {
+            width: 48%;
+        }
+        &-wrap img{
+            margin: 12rem 0 0 0;
+            max-width: 135%;
+            @include bp-medium {
+                margin: 5rem 0 0 0;
+                max-width: 100%;
+            }
+            @include bp-large {
+                margin: 0 auto;
+            }
+        }
+    } 
+}
+.highlight{
+    width: fit-content;
+    padding: 5px 10px;
+    &-link{
+        font-size: .8rem;
+        transition: all .4s ease-in-out;
+        a{
+            color: $color--cherry;
+            transition: all .4s ease-in-out;
+            &:hover{
+                color: #fff; 
+                text-decoration: none;
+        }
+    }
+        &:hover{
+            background-color: $color--lime;
+            border: solid 1px #fff;
+        }
+    }
+}
+.quote{
+    position: relative;
+    font-size: .9rem;    
+    line-height: 1.2;  
+    text-align: left;
+    color: #a51e36;
+    margin-bottom: 40px;
+    margin-left: 10%;
+    @include bp-medium {
+        font-size: 1rem; 
+        margin-bottom: 20px;
+    }
+    &::before{
+        content: url(https://www2.fox.temple.edu/fox-focus/assets/img/quote-start.png);
+        transform: scale(.5);
+        position: absolute;
+        left: -40px;
+        top: -20px;
+        @include bp-medium {
+            transform: scale(1);
+            left: -60px;
+            top: 0;
+        }
+    }
+    &::after{
+        content: url(https://www2.fox.temple.edu/fox-focus/assets/img/quote-end.png);
+        transform: scale(.5);
+        position: absolute;
+        right: -21px;
+        bottom: -20px;
+        @include bp-medium {
+            transform: scale(1);
+            right: -30px;
+            right: -50px;
+            top: 0;
+        }
+    }
+}

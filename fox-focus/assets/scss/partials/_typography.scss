@@ -1,0 +1,77 @@
+//**************************************************//
+// Fonts -> Variables //
+//**************************************************//
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.eot');
+  src: url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.woff2') format('woff2'),
+       url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.woff') format('woff'),
+       url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.ttf')  format('truetype'),
+       url('https://www2.fox.temple.edu/fox-focus/assets/fonts/Knockout-67.svg') format('svg');
+}
+
+$font--accent: 'Knockout', 'Arial', sans-serif;
+$font-primary: 'Roboto', 'Arial', sans-serif;
+$font-primary-condensed: 'Roboto Condensed', 'Arial', sans-serif; 
+$font-primary-condensed-2: 'Oswald', 'Arial', sans-serif; 
+$font-secondary: 'Faustina', serif;
+
+//**************************************************//
+// Structure -> Main -> Headings //
+//**************************************************//
+
+// redo this
+  
+  h1, h2, h3, h4 {
+    font-family: $font-primary;
+    font-weight: bold;
+    .fa {
+      font-size: 3.0em;
+      display: block;
+      margin-bottom: 10px;
+    }
+    sup {
+      font-size: 0.4em;
+      top: -1em;
+    }
+  }
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 35px;
+  }
+  h2 {
+    font-size: 2.0rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+  }
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-top: 0;
+    &.percent::after {
+      font-size: 0.6em;
+      content: '%';
+      vertical-align: middle;
+    }
+  }
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.1em;
+  }
+  h5, h6 {
+    font-size: 1em;
+    line-height: 1em;
+  }
+  h5 {
+    margin-bottom: 15px;
+  }
+  a {
+    &:focus {
+      outline:1px dotted;
+    }
+  }
